@@ -1,0 +1,118 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    
+</head>
+
+<body>
+    <div id='content_out'>
+    <div id='header'>
+        <div id='title' style='height:160px'>
+            <div style='height:20px;'></div>
+            <div style='height:140px;'>
+            <div id='blankForTitle' style='width:30px; height:140px;'></div>
+            <div id='titleText' style='height:140px'>
+                <h1>Visualization of Capital Bikeshare Data</h1>
+                <h2>Jingbo Zhang</h2>
+                <h2>2018.12</h2>
+            </div>
+            </div>
+        
+        </div>
+        <div id="menubar">
+				<ul id="menu">
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="Rides.html">Rides Distribution</a></li>
+					<li><a href="Duration.html">Duration</a></li>
+					<li><a href="StartStation.html">Start Station</a></li>
+					<li><a href="EndStation.html">End Station</a></li>
+					<li><a href="Route.html">Route</a></li>
+                    <li><a href='Holiday.html'>Rides in Holiday</a></li>
+				</ul>
+        </div>
+    </div>
+    
+    <div id='content'>
+    <div id='content_figure' style='width:800px;'>
+        <br>
+        
+        <h3>
+        Background & Objective
+        </h3>
+        
+        <h4>
+            As the world becomes more urbanized, understanding urban logistics and maximizing resources in urban settings will be ever more important. Bike sharing systems are a form of public transportation that is cheap and environmentally friendly; it also lessens traffic congestion and even improves public health. They are being implemented in a growing number of cities around the world. 
+        </h4>
+        <br>
+        <h4> 
+            This project aims to visualize the bike rides data of 2017 Q4, which is published by a famous bike sharing system – Capital Bikeshare. The data consists of the start date, end date, start station, end station, duration and member type of 800,000 bike trips around DC. By visualizing this bike share data, this project aims to identify and summarize the typical behavior of casual and registered members. Specifically, customers’ behavior regarding bike share can be analyzed from three perspectives - riding time, which means when to start a ride, riding duration and riding route. The dataset will be analyzed carefully by conducting visualizations showing the number of rides made by different member types across different day of week and different hour of day. Duration distribution will display if there’s a regularity of riding duration in different times. Riding routes are considered as the pair of start station and end stations. By analyzing routes data, popular stations and routes will be discovered. 
+        </h4>
+        
+        <br>
+        
+        <h3>
+        Data Source
+        </h3>
+        
+        <h4>
+        There are two datasets used for this project. The primary dataset is downloaded directly from the official website of Capital Bikeshare and contains the detailed information of 800,000 rides in 2017 Q4. The second support data set contains the precise longitude and latitude of each station and can help to better visualize the data on map.
+        </h4>
+        <div id='data'>
+        <ul>
+					<li><a href="https://www.capitalbikeshare.com/system-data">Bike share data</a></li>
+					<li><a href="http://opendata.dc.gov/datasets/capital-bike-share-locations/data">Station data</a></li>
+        </ul>
+        </div>
+        
+        <br>
+        <h3>Primary Findings</h3>
+        <h4>
+        In general, members tend to ride bikes for commuting purpose on weekdays. The peak hour of rides on weekdays coincides with the rush hours. Their riding time are relatively low. The duration of most of the rides are between 5 minutes and 20 minutes. Union station is the most important bike station for them. Their popular routes are all around the area of union station. 
+        </h4>
+        <br>
+        <h4>
+        Casual users tend to ride bikes for tourism. There are more rides made on weekends. Their riding time are relatively high, compared with members. Lincoln Memorial is their favorite station. Routes around Lincoln Memorial are largely occupied by casual users.
+        </h4>
+        <br>
+        
+        <h3>
+        Technical Summary
+        </h3>
+        
+        <h4>
+        The project consists of six parts:
+        <ul>
+            <li>Rides Distribution Analysis</li>
+            <li>Duration Analysis</li>
+            <li>Start Station Analysis</li>
+            <li>End Station Analysis</li>
+            <li>Route Analysis</li>
+            <li>Rides in Holiday Analysis</li>
+        </ul>
+        Visualizations in first five parts are created by Tableau. Figures in the last part are developed using Google Visualization API.
+        </h4>
+        
+        <br>
+        
+        <h3>
+        Tableau Workbook
+        </h3>
+        
+        <div id='Tableau'>
+        <h4>
+        The complete Tableau workbook can be found by clicking <a href='https://public.tableau.com/profile/jingbo.zhang#!/vizhome/VisualizationofCapitalBikeshareData/Story1?publish=yes'>here</a>.
+        </h4>
+        </div>
+            
+        <br>
+        
+        </div>
+        </div>
+        
+    <div id='bottom' style='width:1000px; height:20px'>
+        
+    </div>
+        
+    </div>
+</body>
+</html>

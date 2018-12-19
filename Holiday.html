@@ -1,0 +1,104 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src='js/chart1.js'>  </script>  
+    <script type="text/javascript" src='js/chart2.js'>  </script>
+    
+</head>
+
+<body>
+    <div id='content_out'>
+    <div id='header'>
+        <div id='title' style='height:160px'>
+            <div style='height:20px;'></div>
+            <div style='height:140px;'>
+            <div id='blankForTitle' style='width:30px; height:140px;'></div>
+            <div id='titleText'>
+                <h1>Visualization of Capital Bikeshare Data</h1>
+                <h2>Jingbo Zhang</h2>
+                <h2>2018.12</h2>
+            </div>
+            </div>
+        
+        </div>
+        <div id="menubar">
+				<ul id="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Rides.html">Rides Distribution</a></li>
+					<li><a href="Duration.html">Duration</a></li>
+					<li><a href="StartStation.html">Start Station</a></li>
+					<li><a href="EndStation.html">End Station</a></li>
+					<li><a href="Route.html">Route</a></li>
+                    <li class="selected"><a href='Holiday.html'>Rides in Holiday</a></li>
+				</ul>
+        </div>
+    </div>
+    
+    <div id='content'>
+        <div id='content_figure' style='width:800px;'>
+        
+        <br>
+        
+        <h3>Number of Rides</h3>
+            <h4>
+            In general, less people choose to ride bikes during holidays. The percentages of members' rides on Thanksgiving Day and Christmas Eve are similar to that of a regular weekday. However, the percentages of members' rides on Black Friday (the day after Thanksgiving Day) and Christmas Day are similar to a regular weekend.
+            </h4>
+            <h5>Number and Percentage of Rides by Members and Casual Users</h5>
+        <div id='NumberOfRides' style='height: 500px; width: 800px;'>
+            <div id='count_ride_bar' style='height: 400px; width: 800px;'></div>
+            <div id='divForPie' style='height: 100px; width: 800px;'>
+                <div style='height: 90px; width: 80px;' class='pieFigure'></div>
+                <div id='CountPie1' class='pieFigure' style='height: 90px; width: 110px;'></div>
+                <div id='CountPie2' class='pieFigure' style='height: 90px; width: 105px;'></div>
+                <div id='CountPie3' class='pieFigure' style='height: 90px; width: 95px;'></div>
+                <div id='CountPie4' class='pieFigure' style='height: 90px; width: 110px;'></div>
+                <div id='CountPie5' class='pieFigure' style='height: 90px; width: 110px;'></div>
+                <div id='CountPie6' class='pieFigure' style='height: 90px; width: 110px;'></div>
+            </div>
+        </div>
+            <br>
+            <h5>Number of Rides: Members VS Casual Users</h5>
+        <div id='bubble' style='height: 400px; width: 800px;'></div>
+            
+            <br>
+            <br>
+        
+        <h3>Duration Distribution</h3>
+        <h4>Compared with regular weekdays and regular weekends, the duration distribution of rides in most holidays is similar to the distribution on weekends, except Thanksgiving Day. </h4>
+            <h5>Duration Distribution of Different Holidays</h5>
+            <div id='DurationBar' style='height: 300px; width: 800px;'></div>
+            
+            <br>
+            <br>
+            
+        <h3>Rides Distribution by Hours</h3>
+            <h4>For hourly distribution, the shape of distribution on Thanksgiving Day is similar to a regular weekday with a earlier second peak. Rides on Black Friday are more concentrated. The shapes of distribution on Christmas Eve and Christmas Day are similar to a regular weekend but rides are more fluctuated.</h4>
+            <h5>Rides Distribution by Hours of Different Holidays</h5>
+            <div id='line' style='height: 350px; width: 800px;'></div>
+            <br>
+            <h4>There are more casual users riding bikes on Black Friday and Christmas Day, compared with other two holidays.</h4>
+            <h5>Percentage of Members' Rides by Hours</h5>
+            <div id='percent_figure' style='height:600px;width:600px;'>
+                <div id='percent1' style='height:300px; width:600px;'>
+                    <div id='area1' class='area' style='height: 300px; width: 300px;'></div>
+                    <div id='area2' class='area' style='height: 300px; width: 300px;'></div>
+                </div>
+                <div id='percent2' style='height:300px; width:600px;'>
+                    <div id='area3' class='area' style='height: 300px; width: 300px;'></div>
+                    <div id='area4' class='area' style='height: 300px; width: 300px;'></div>
+                </div>
+            
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div id='bottom' style='width:1000px; height:20px'>
+        
+    </div>
+        
+    </div>
+</body>
+</html>
